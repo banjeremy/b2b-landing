@@ -1,0 +1,29 @@
+{
+  "name": "b2b-landing",
+  "version": "1.0.0",
+  "description": "landing page for Barber2Beauty",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "banjeremy",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-contrib-clean": "~0.5",
+    "grunt-contrib-concat": "~0.3",
+    "grunt-contrib-connect": "~0.6",
+    "grunt-contrib-copy": "~0.5",
+    "grunt-contrib-cssmin": "~0.7",
+    "grunt-contrib-htmlmin": "~0.1",
+    "grunt-contrib-imagemin": "~0.4",
+    "grunt-contrib-jade": "^0.13.0",
+    "grunt-contrib-jshint": "~0.9",
+    "grunt-contrib-less": "~0.8",
+    "grunt-contrib-uglify": "~0.2",
+    "grunt-contrib-watch": "~0.6",
+    "grunt-dom-munger": "~3.4",
+    "jade": "^1.7.0",
+    "load-grunt-tasks": "~0.2"
+  }
+}

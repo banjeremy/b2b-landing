@@ -1,0 +1,71 @@
+html
+  head
+    link(href="bower_components/bootstrap/dist/css/bootstrap.min.css" type='text/css' rel='stylesheet/less')
+    link(href="app.less" type='text/css' rel='stylesheet/less')
+
+    script(src='bower_components/less.js/dist/less-1.6.2.js' data-concat='false')
+    script(src='http://localhost:35729/livereload.js', data-concat='false')
+    script(src='bower_components/jquery/jquery.js')
+    script(src='bower_components/bootstrap/dist/js/bootstrap.js')
+    script(src='bower_components/underscore/underscore.js')
+  body
+    .col-md-12(ng-controller='HomeCtrl')
+      .row.top-buffer
+        .col-md-12
+          #logo
+            img(src='/images/logo_small.png')
+            h1 Barber 2 Beauty
+            #tagline Cut. Curl. Connect.
+          hr
+      .row
+        .col-md-6
+          h1 Find Your Barber
+          h2 Even Book Appointments On The Go
+          p
+            | Introducing Barber 2 Beauty &mdash; a revolutionary new service that lets you find barbors, book appointments, post reviews and share your haircutitng experience.
+          #email-box
+            h3 When can you create your Industry Profile?
+            p
+              | Launching soon on Kickstarter.
+              br
+              | Signup below to find out when you can get Barber 2 Beauty at a special discounted&nbsp;price.
+              .input-group
+                input.form-control(type='text', placeholder='Enter email address')
+                a.input-group-addon.btn.btn-default Join
+        .col-md-6
+          // <img src="http://lorempixel.com/g/400/400/fashion"/>
+          img.calendar(src='images/screenshot_calendar.jpg')
+      .row.center
+        .col-md-12
+          hr
+          h3
+            | Having a hard time finding a barber that you can trust? Now you don&apos;t have to. Barber 2 Beauty will connect you to the right professional.
+      .row.icons
+        .col-md-6
+          .row
+            .feature
+              img.razor(src='images/razor.svg')
+              span Find a local barber &amp; compare reviews
+          .row
+            .feature
+              i.fa.fa-comments
+              span Ask a question, connect with professionals, or share your experience.
+        .col-md-6
+          .row
+            .feature
+              i.fa.fa-map-marker
+              span Find local barber shops &amp; Men&apos;s Salons and compare reviews.
+          .row
+            .feature
+              i.fa.fa-calendar
+              span You&apos;re next in line with a booked appointment.
+        .row.center
+          .col-md-12
+            hr
+            h3 It&apos;s mind blowing really.
+        #slider
+        .row.center
+          .col-md-12
+            hr
+            h4
+              | Because that we know that busy people make mistakes and lose appointments, Barber 2 Beauty sends a customized notification reminder of your scheduled appointment.
