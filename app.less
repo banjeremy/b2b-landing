@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+
 @charcoal: #474747;
 @gray-med: #A3A3A3;
 @gray-light: #C9C9C9;
@@ -5,30 +7,52 @@
 @green: #B8D03E;
 @orange: #FEB33C;
 
+@navbar-height: 100px;
+
 body {
-  /* background-color: #c9c9c9; */
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
 }
 
-hr {
-  border-bottom: 2px;
-  background-color: #B8D03E;
+nav {
+  #logo {
+    clear: both;
+
+    img {
+    }
+
+    h1 {
+      display: inline-block;
+      padding-left: 20px;
+      font-weight: 700;
+    }
+
+    #tagline {
+      position: absolute;
+      left: 165px;
+      font-size: 25px;
+      top: 50px;
+    }
+  }
+
+  .join-mailing-list {
+    h2 {
+      line-height: 60px;
+    }
+  }
 }
 
-.top-buffer {
-  padding-top: 20px;
-}
 
 h1 {
-  font-weight: 700;
+  font-weight: 400;
   padding: 0;
   margin: 0;
 
 }
 
 h2 {
+  font-weight: 400;
   padding-top: 0;
   margin-top: 0;
   font-size: 24px;
@@ -36,25 +60,6 @@ h2 {
 
 p {
   font-size: 17px;
-}
-
-#logo {
-  clear: both;
-
-  img {
-  }
-
-  h1 {
-    display: inline-block;
-    padding-left: 20px;
-  }
-
-  #tagline {
-    position: absolute;
-    left: 165px;
-    font-size: 25px;
-    top: 50px;
-  }
 }
 
 .calendar {
@@ -69,6 +74,10 @@ p {
   margin: 50px auto;
 }
 
+h3.text-center {
+  padding: 40px 0;
+}
+
 #email-box {
   background-color: @gray-lighter;
   border: 1px solid @gray-light;
@@ -81,29 +90,47 @@ p {
   }
 }
 
-.icons {
-  .feature {
-    padding: 20px;
-
-    i {
-      font-size: 50px;
-      color: #000;
-      width: 50px;
-    }
-
-    img.razor {
-      width: 65px;
-    }
-
-    span {
-      padding-left: 20px;
-    }
-  }
+.tippy {
+  /* margin-top: @navbar-height; */
+  padding-top: 40px;
 }
 
-#slider {
+.shaded {
+  background-color: @charcoal;
+}
+
+.feature-box {
+  height: 220px;
+  padding: 20px;
+  margin: 40px 0;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid @gray-med;
+}
+
+.row {
+  background-color: #fff;
+}
+
+#video {
   width: 100%;
-  height: 300px;
-  border: 1px solid @gray-light;
-  background-color: @gray-lighter;
+  height: 500px;
+  background: transparent;
+}
+
+img.razor {
+  max-width: 100%;
+}
+
+video#bgvid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  /* background: url(polina.jpg) no-repeat; */
+  background-size: cover;
 }

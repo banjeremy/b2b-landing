@@ -84,7 +84,9 @@ module.exports = function (grunt) {
       main: {
         files: [
           {src: ['img/**'], dest: 'public/'},
-          {src: ['bower_components/font-awesome/fonts/**'], dest: 'public/',filter:'isFile',expand:true}
+          {src: ['bower_components/font-awesome/css/font-awesome.min.css'], dest: 'public/',filter:'isFile',expand:true},
+          {src: ['bower_components/font-awesome/fonts/**'], dest: 'public/',filter:'isFile',expand:true},
+          {src: ['bower_components/bootstrap/dist/css/*.min.css'], dest: 'public/',filter:'isFile',expand:true}
           //{src: ['bower_components/angular-ui-utils/ui-utils-ieshiv.min.js'], dest: 'public/'},
           //{src: ['bower_components/select2/*.png','bower_components/select2/*.gif'], dest:'public/css/',flatten:true,expand:true},
           //{src: ['bower_components/angular-mocks/angular-mocks.js'], dest: 'public/'}
@@ -110,7 +112,7 @@ module.exports = function (grunt) {
             {selector:'link[rel="stylesheet"][data-concat!="false"]',attribute:'href',writeto:'appcss'}
           ]
         },
-        src: 'public/index.html'
+        src: 'index.html'
       },
       update: {
         options: {
@@ -120,7 +122,7 @@ module.exports = function (grunt) {
             {selector:'head',html:'<link rel="stylesheet" href="app.full.min.css">'}
           ]
         },
-        src:'public/index.html',
+        src:'index.html',
         dest: 'public/index.html'
       }
     },
